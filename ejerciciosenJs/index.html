@@ -9,41 +9,37 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Ejercicios en JavaScript</h1>
+    <h1>Seleccione un ejercicio:</h1>
+    <select id="menuEjercicios">
+        <option value="">-- Selecciona un ejercicio --</option>
+        <option value="1">Suma de dos números</option>
+        <option value="2">Par o impar</option>
+        <option value="3">Mayor de tres números</option>
+        <option value="4">Tabla de multiplicar</option>
+        <option value="5">Contar vocales</option>
+        <option value="6">Números del 1 al N</option>
+        <option value="7">Factorial</option>
+        <option value="8">Sumar números pares del 1 al 100</option>
+        <option value="9">Adivina el número</option>
+        <option value="10">Número primo</option>
+        <option value="11">Promedio de calificaciones</option>
+        <option value="12">Números pares hasta N</option>
+        <option value="13">Conversión de grados Celsius a Fahrenheit</option>
+        <option value="14">Días de la semana</option>
+        <option value="15">Área de un círculo</option>
+        <option value="16">Conversión de metros a kilómetros</option>
+        <option value="17">Número aleatorio entre 1 y 100</option>
+        <option value="18">Cuenta regresiva desde N</option>
+        <option value="19">Suma de dígitos de un número</option>
+        <option value="20">Verificar si una palabra es palíndromo</option>
+    </select>
 
-        <h1>Seleccione un ejercicio:</h1>
-        <select id="menuEjercicios">
-            <option value="">-- Selecciona un ejercicio --</option>
-            <option value="1">Suma de dos números</option>
-            <option value="2">Par o impar</option>
-            <option value="3">Mayor de tres números</option>
-            <option value="4">Tabla de multiplicar</option>
-            <option value="5">Contar vocales</option>
-            <option value="6">Números del 1 al N</option>
-            <option value="7">Factorial</option>
-            <option value="8">Sumar números pares del 1 al 100</option>
-            <option value="9">Adivina el número</option>
-            <option value="10">Número primo</option>
-            <option value="11">Invertir una cadena</option>
-            <option value="12">Números pares del 1 al 50</option>
-            <option value="13">Calcular promedio de un array</option>
-            <option value="14">Números impares del 1 al 50</option>
-            <option value="15">Potencia de un número</option>
-            <option value="16">Convertir Celsius a Fahrenheit</option>
-            <option value="17">Contar palabras en una frase</option>
-            <option value="18">Números del 100 al 1</option>
-            <option value="19">Generar número aleatorio</option>
-            <option value="20">Sumar dígitos de un número</option>
-        </select>
+    <button onclick="mostrarEjercicio()">Mostrar Ejercicio</button>
 
-        <!-- Botón para ejecutar la función -->
-        <button onclick="mostrarEjercicio()">Mostrar Ejercicio</button>
+    <div id="output" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px;"></div>
 
-        <!-- Contenedor para mostrar el resultado -->
-        <div id="output" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px;"></div>
 
-    </div>
+
     <script src="./script.js"></script>
 </body>
 

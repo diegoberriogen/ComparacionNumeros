@@ -1,38 +1,89 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f3f4f6;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
+/* Título principal */
+h1 {
+    color: #ff6b6b;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Select del menú de ejercicios */
+select {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #ff6b6b;
+}
+
+/* Botón para mostrar el ejercicio */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #ff3b3b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Output de resultados */
+#output {
+    margin-top: 20px;
+    border: 2px solid #ddd;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    min-height: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #ff5722;
-}
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
 
-select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
+    h1 {
+        font-size: 1.5em;
+    }
 
-#output {
-    white-space: pre-line;
-    margin-top: 20px;
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    min-height: 50px;
+    button,
+    select {
+        width: 100%;
+        font-size: 1em;
+    }
 }
