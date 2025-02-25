@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios en JavaScript</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Ejercicios en JavaScript</h1>
 
-        <!-- Menú desplegable para seleccionar el ejercicio -->
-        <select id="menuEjercicios" onchange="mostrarEjercicio()">
-            <option value="">Selecciona un ejercicio</option>
+        <h1>Seleccione un ejercicio:</h1>
+        <select id="menuEjercicios">
+            <option value="">-- Selecciona un ejercicio --</option>
             <option value="1">Suma de dos números</option>
             <option value="2">Par o impar</option>
             <option value="3">Mayor de tres números</option>
@@ -25,21 +25,26 @@
             <option value="8">Sumar números pares del 1 al 100</option>
             <option value="9">Adivina el número</option>
             <option value="10">Número primo</option>
-            <option value="11">Área de un triángulo</option>
-            <option value="12">Número mayor de tres</option>
-            <option value="13">Contar palabras</option>
-            <option value="14">Suma de una lista</option>
-            <option value="15">Es palíndromo</option>
-            <option value="16">Fibonacci</option>
-            <option value="17">Invertir una cadena</option>
-            <option value="18">Frecuencia de letras</option>
-            <option value="19">Números perfectos</option>
-            <option value="20">Menú interactivo (Simulación)</option>
+            <option value="11">Invertir una cadena</option>
+            <option value="12">Números pares del 1 al 50</option>
+            <option value="13">Calcular promedio de un array</option>
+            <option value="14">Números impares del 1 al 50</option>
+            <option value="15">Potencia de un número</option>
+            <option value="16">Convertir Celsius a Fahrenheit</option>
+            <option value="17">Contar palabras en una frase</option>
+            <option value="18">Números del 100 al 1</option>
+            <option value="19">Generar número aleatorio</option>
+            <option value="20">Sumar dígitos de un número</option>
         </select>
 
-        <div id="output"></div>
+        <!-- Botón para ejecutar la función -->
+        <button onclick="mostrarEjercicio()">Mostrar Ejercicio</button>
+
+        <!-- Contenedor para mostrar el resultado -->
+        <div id="output" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px;"></div>
+
     </div>
-    <script src="scripts.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

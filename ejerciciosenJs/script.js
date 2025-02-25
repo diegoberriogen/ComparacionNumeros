@@ -68,6 +68,68 @@ function mostrarEjercicio() {
             resultado = `El número ${num} es ${esPrimo ? 'primo' : 'no primo'}`;
             break;
 
+        // Nuevos ejercicios añadidos del 11 al 20
+
+        case '11': // Invertir una cadena
+            palabra = 'hola';
+            resultado = `La palabra "${palabra}" invertida es: "${palabra.split('').reverse().join('')}"`;
+            break;
+
+        case '12': // Números pares del 1 al 50
+            resultado = 'Números pares del 1 al 50: ';
+            for (let i = 1; i <= 50; i++) {
+                if (i % 2 === 0) resultado += `${i} `;
+            }
+            break;
+
+        case '13': // Calcular promedio de un array
+            let numeros = [10, 20, 30, 40, 50];
+            let promedio = numeros.reduce((a, b) => a + b, 0) / numeros.length;
+            resultado = `El promedio de [${numeros}] es: ${promedio}`;
+            break;
+
+        case '14': // Números impares del 1 al 50
+            resultado = 'Números impares del 1 al 50: ';
+            for (let i = 1; i <= 50; i++) {
+                if (i % 2 !== 0) resultado += `${i} `;
+            }
+            break;
+
+        case '15': // Potencia de un número
+            num1 = 2;
+            num2 = 3;
+            resultado = `${num1} elevado a la ${num2} es: ${Math.pow(num1, num2)}`;
+            break;
+
+        case '16': // Convertir grados Celsius a Fahrenheit
+            let celsius = 30;
+            let fahrenheit = (celsius * 9 / 5) + 32;
+            resultado = `${celsius}°C son ${fahrenheit}°F`;
+            break;
+
+        case '17': // Contar palabras en una frase
+            let frase = 'Hola, cómo estás hoy';
+            let cantidadPalabras = frase.split(' ').length;
+            resultado = `La frase "${frase}" tiene ${cantidadPalabras} palabras.`;
+            break;
+
+        case '18': // Números del 100 al 1
+            resultado = 'Números del 100 al 1: ';
+            for (let i = 100; i >= 1; i--) {
+                resultado += `${i} `;
+            }
+            break;
+
+        case '19': // Generar número aleatorio del 1 al 10
+            resultado = `Número aleatorio (1-10): ${Math.floor(Math.random() * 10) + 1}`;
+            break;
+
+        case '20': // Sumar dígitos de un número
+            num = 1234;
+            let sumaDigitos = num.toString().split('').reduce((a, b) => a + parseInt(b), 0);
+            resultado = `La suma de los dígitos de ${num} es: ${sumaDigitos}`;
+            break;
+
         default:
             resultado = 'Selecciona un ejercicio para mostrar el resultado.';
             break;
